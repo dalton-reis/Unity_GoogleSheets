@@ -3,6 +3,12 @@ using UnityEngine;
 
 namespace TecEduFURB.GoogleSpreadsheet {
 
+    /// <summary>
+    /// Demonstra um caso de uso da classe SpreadsheetService, no qual são recuperado todos os valores
+    /// da planilha definida pela classe SpreadsheetInfo.
+    /// 
+    /// Autor: github.com/AlexSerodio
+    /// </summary>
     public class TestSpreadsheetService : MonoBehaviour {
 
         private SpreadsheetService service;
