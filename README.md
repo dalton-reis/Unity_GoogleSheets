@@ -11,4 +11,4 @@ O diagrama abaixo apresenta as classes e funcionalidades disponibilizadas pelo p
 ## Pré-requisitos
 Para que esse plugin funcione corretamente é necessário primeiro criar um projeto e gerar as credenciais necessárias no [Google Developer Console](https://console.developers.google.com/). Para isso recomenda-se seguir o passo a passo apresentado [aqui](https://flaviocopes.com/google-api-authentication/).
 
-Uma vez gerado o arquivo com as credenciais, deve-se substituir o conteúdo do arquivo [./Assets/GoogleSheetsAPI/credentials.json](https://github.com/tecedufurb/google-spreadsheet-api/blob/master/Assets/GoogleSheetsAPi/credentials.json) pelo conteúdo do arquivo de credenciais gerado.
+Uma vez gerado o arquivo com as credenciais, deve-se substituir o conteúdo do arquivo [./Assets/GoogleSheetsAPI/credentials.json](https://github.com/tecedufurb/google-sheets-unity/blob/master/Assets/GoogleSheetsAPI/credentials.json) pelo conteúdo do arquivo de credenciais gerado.
