@@ -1,4 +1,4 @@
-﻿namespace TecEduFURB.GoogleSpreadsheet {
+﻿namespace TecEduFURB.GoogleSheets {
 
     /// <summary>
     /// Contém as informações referêntes às credenciais utilizadas pelo SpreadsheetService.

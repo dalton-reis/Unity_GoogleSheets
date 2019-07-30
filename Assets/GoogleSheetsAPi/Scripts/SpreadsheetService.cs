@@ -9,7 +9,7 @@ using System.IO;
 using System.Threading;
 using static Google.Apis.Sheets.v4.SpreadsheetsResource.ValuesResource;
 
-namespace TecEduFURB.GoogleSpreadsheet {
+namespace TecEduFURB.GoogleSheets {
 
     /// <summary>
     /// Disponibiliza métodos para interagir com planilhas do Google.
