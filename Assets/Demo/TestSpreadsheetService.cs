@@ -16,7 +16,11 @@ namespace TecEduFURB.GoogleSpreadsheet {
         void Start() {
             service = new SpreadsheetService(SpreadsheetInfo.CREDENTIALS_PATH, SpreadsheetInfo.SPREADSHEET_ID);
 
-            IList<IList<object>> values = service.GetValues();
+            service.AddValues(new List<object>(){"elemento 1", "elemento 2"});
+
+            service.UpdateCell("A2", "atualizado");
+
+            IList<IList<object>> values = service.GetValues("A2:B2");
 
             foreach(var row in values) {
                 foreach (var col in row)

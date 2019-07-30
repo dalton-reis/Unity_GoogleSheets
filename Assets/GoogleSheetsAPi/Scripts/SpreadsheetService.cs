@@ -126,13 +126,12 @@ namespace TecEduFURB.GoogleSpreadsheet {
         /// Adiciona os valores informados na planilha.
         /// </summary>
         /// <param name="values">Os valores da linha a ser adicionada.</param>
-        /// <param name="range">Opcional - O range no qual a nova linha será adicionada. Exemplo: A1:B2.</param>
         /// <returns>Resposta do request da operação.</returns>
-        public AppendValuesResponse AddValues(List<object> values, string range) {
+        public AppendValuesResponse AddValues(List<object> values) {
             ValueRange valueRange = new ValueRange();
             valueRange.Values = new List<IList<object>> { values };
 
-            AppendRequest appendRequest = service.Spreadsheets.Values.Append(valueRange, spreadsheetId, range);
+            AppendRequest appendRequest = service.Spreadsheets.Values.Append(valueRange, spreadsheetId, "A:A");
             appendRequest.ValueInputOption = AppendRequest.ValueInputOptionEnum.USERENTERED;
 
             return appendRequest.Execute();
@@ -141,7 +140,7 @@ namespace TecEduFURB.GoogleSpreadsheet {
         /// <summary>
         /// Atualiza o valor de uma célula da planilha.
         /// </summary>
-        /// <param name="cell">Índice da célula a ser atualizada. Exemplo: A1.</param>
+        /// <param name="cell">Índice da célula a ser atualizada. Exemplo: A2.</param>
         /// <param name="newValue">Novo valor da célula.</param>
         /// <returns>Resposta do request da operação.</returns>
         public UpdateValuesResponse UpdateCell(string cell, object newValue) {
