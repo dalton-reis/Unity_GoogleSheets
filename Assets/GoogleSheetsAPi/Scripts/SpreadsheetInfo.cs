@@ -10,7 +10,7 @@
     public abstract class SpreadsheetInfo {
 
         public const string CREDENTIALS_PATH = "./Assets/GoogleSheetsAPi/credentials.json";
-        public const string SPREADSHEET_ID = "12LRAb-Qm3f8CcaUuqKvkCvODFSu8gG3dYBUPKgqfy08";
+        public const string SPREADSHEET_ID = "colocar aqui id da planilha do Google disponível na url da planilha";
 
     }
 
